@@ -62,6 +62,10 @@ body {
   margin: 2px;
 }
 
+#item1 {
+  background-image: url("./images/WorkSpace.jpg");
+  background-size: cover;
+}
 /* footer part */
 .footer {
   grid-area: footer;

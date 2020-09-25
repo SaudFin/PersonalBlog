@@ -1,0 +1,8 @@
+@import "/main.css";
+
+.post {
+  grid-area: cards;
+  border: 2px solid red;
+  display: flex;
+  flex-flow: column;
+}
