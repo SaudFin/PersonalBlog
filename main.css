@@ -1,13 +1,22 @@
 /* general part */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 .container {
+  height: 100%;
   display: grid;
   grid-template-areas:
+    "nav cards cards cards "
+    "nav cards cards cards "
+    "nav cards cards cards "
     "nav cards cards cards "
     "nav footer footer footer ";
   grid-gap: 20px;
   padding: 20px;
   background-color: aqua;
-  height: 75vh;
+  /* height: 75vh; */
 }
 /* menu part */
 .menu {
@@ -15,7 +24,7 @@
   border: 2px solid red;
 }
 
-/* blog part */
+/* blog posts part */
 .blogPosts {
   grid-area: cards;
   border: 2px solid red;
@@ -24,9 +33,33 @@
 }
 
 .blogCard {
+  display: flex;
+  margin-top: 2vh;
   width: 200px;
   height: 200px;
-  border: 2px dotted orchid;
+  border-top-left-radius: 2vw;
+  border-top-right-radius: 2vw;
+  background-image: url("./images/Coding Books.jpg");
+  background-size: cover;
+}
+
+.cardTitle {
+  display: flex;
+  align-self: flex-end;
+  justify-content: space-between;
+  height: 35px;
+  width: 100%;
+  background-color: brown;
+}
+
+.cardTitle h3 {
+  margin: auto;
+  margin-left: 0.5vw;
+  /* overflow: scroll; */
+}
+
+.cardTitle button {
+  margin: 2px;
 }
 
 /* footer part */
