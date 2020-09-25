@@ -1,0 +1,36 @@
+/* general part */
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav cards cards cards "
+    "nav footer footer footer ";
+  grid-gap: 20px;
+  padding: 20px;
+  background-color: aqua;
+  height: 75vh;
+}
+/* menu part */
+.menu {
+  grid-area: nav;
+  border: 2px solid red;
+}
+
+/* blog part */
+.blogPosts {
+  grid-area: cards;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.blogCard {
+  width: 200px;
+  height: 200px;
+  border: 2px dotted orchid;
+}
+
+/* footer part */
+.footer {
+  grid-area: footer;
+  border: 2px solid blue;
+}
