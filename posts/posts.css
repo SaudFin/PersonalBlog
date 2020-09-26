@@ -1,8 +1,53 @@
 @import "/main.css";
-
+@import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
 .post {
   grid-area: cards;
-  border: 2px solid red;
   display: flex;
   flex-flow: column;
+  max-width: 40vw;
+  margin: auto;
+}
+
+.author {
+  display: flex;
+  max-height: 12vh;
+}
+.authorImg img {
+  max-width: 6vw;
+  border-radius: 50%;
+  margin-left: 1vw;
+}
+
+.authorInfo {
+  display: flex;
+  flex-flow: column;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+
+.authorInfo h4,
+.authorInfo h5,
+.authorInfo p {
+  margin: 0;
+  padding: 0;
+}
+
+.imgPost {
+  max-width: 24vw;
+  display: block;
+  margin: auto;
+}
+
+figcaption {
+  text-align: center;
+  font-style: oblique;
+}
+
+p {
+  font-family: "Peddana", serif;
+  font-size: 24px;
+  color: #6e3f3f;
+}
+li {
+  list-style: circle;
 }

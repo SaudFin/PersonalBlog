@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
 /* general part */
 html,
 body {
   height: 100%;
   margin: 0;
+  background: #e0e0e1;
 }
 .container {
   height: 100%;
@@ -12,22 +14,42 @@ body {
     "nav cards cards cards "
     "nav cards cards cards "
     "nav cards cards cards "
-    "nav footer footer footer ";
-  grid-gap: 20px;
-  padding: 20px;
-  background-color: aqua;
-  /* height: 75vh; */
+    "footer footer footer footer ";
+}
+
+a {
+  color: #a55656;
+  text-decoration-line: none;
+  font-style: italic;
 }
 /* menu part */
 .menu {
   grid-area: nav;
-  border: 2px solid red;
+  background-color: #b7b7ba;
+  max-width: 15vw;
+}
+
+.menu h1 {
+  text-align: center;
+  background: #e0e0e1;
+  font-family: "Peddana", serif;
+  font-size: 2.8vw;
+}
+
+.menu ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 1.3vw;
+}
+
+.menu ul li {
+  padding: 0.5vw;
+  font-size: 20px;
 }
 
 /* blog posts part */
 .blogPosts {
   grid-area: cards;
-  border: 2px solid red;
   display: flex;
   justify-content: space-evenly;
 }
@@ -49,13 +71,12 @@ body {
   justify-content: space-between;
   height: 35px;
   width: 100%;
-  background-color: brown;
+  background-color: #b7b7ba;
 }
 
 .cardTitle h3 {
   margin: auto;
   margin-left: 0.5vw;
-  /* overflow: scroll; */
 }
 
 .cardTitle button {
@@ -66,8 +87,18 @@ body {
   background-image: url("./images/WorkSpace.jpg");
   background-size: cover;
 }
+
 /* footer part */
 .footer {
   grid-area: footer;
-  border: 2px solid blue;
+  background-color: #b7b7ba;
+  position: relative;
+}
+
+.footer div {
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  margin-left: 50%;
+  color: #000000;
 }
