@@ -10,6 +10,8 @@
 
 .author {
   display: flex;
+  flex-flow: row;
+
   max-height: 12vh;
 }
 .authorImg img {
@@ -23,6 +25,7 @@
   flex-flow: column;
   margin-top: 1vh;
   margin-left: 1vw;
+  max-width: 14vw;
 }
 
 .authorInfo h4,
@@ -42,12 +45,42 @@ figcaption {
   text-align: center;
   font-style: oblique;
 }
-
+.authorInfo p {
+  line-height: 1.6vh;
+  margin-top: 0.6vh;
+}
 p {
   font-family: "Peddana", serif;
   font-size: 24px;
   color: #6e3f3f;
+  line-height: 3vh;
 }
 li {
   list-style: circle;
+}
+
+/* for tablet */
+@media only screen and (max-width: 1024px) {
+  .authorInfo p {
+    font-size: 1.8vw;
+    line-height: 0.7;
+  }
+}
+
+/* for mobile screen */
+@media only screen and (max-width: 700px) {
+  .authorInfo {
+    max-width: 300px;
+  }
+
+  .authorInfo p {
+    font-size: 18px;
+  }
+
+  .imgPost {
+    max-width: 190px;
+  }
+  .post {
+    max-width: 300px;
+  }
 }

@@ -23,6 +23,9 @@ a {
   font-style: italic;
 }
 /* menu part */
+#mobileScreen {
+  display: none;
+}
 .menu {
   grid-area: nav;
   background-color: #b7b7ba;
@@ -51,11 +54,14 @@ a {
 .blogPosts {
   grid-area: cards;
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 60vw;
+  /* justify-content: space-evenly; */
 }
 
 .blogCard {
   display: flex;
+  margin: 2vw;
   margin-top: 2vh;
   width: 200px;
   height: 200px;
@@ -101,4 +107,29 @@ a {
   left: 0;
   margin-left: 50%;
   color: #000000;
+}
+
+/*  mobile screen */
+@media only screen and (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+
+  #mobileScreen {
+    display: block;
+    text-align: center;
+  }
+
+  .blogPosts {
+    margin: auto;
+  }
+
+  .footer {
+    height: 5vh;
+    margin-bottom: -2vh;
+  }
+
+  .footer div {
+    margin-left: 37%;
+  }
 }
