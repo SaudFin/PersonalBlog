@@ -1,3 +1,6 @@
+@import "/CSS\ supporting-files/posts.css";
+@import "/CSS\ supporting-files/mobile.css";
+@import "/CSS\ supporting-files/tablet.css";
 @import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
 /* general part */
 html,
@@ -107,29 +110,4 @@ a {
   left: 0;
   margin-left: 50%;
   color: #000000;
-}
-
-/*  mobile screen */
-@media only screen and (max-width: 700px) {
-  .menu {
-    display: none;
-  }
-
-  #mobileScreen {
-    display: block;
-    text-align: center;
-  }
-
-  .blogPosts {
-    margin: auto;
-  }
-
-  .footer {
-    height: 5vh;
-    margin-bottom: -2vh;
-  }
-
-  .footer div {
-    margin-left: 37%;
-  }
 }

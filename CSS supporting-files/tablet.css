@@ -1,0 +1,37 @@
+/* for the post page */
+@media only screen and (max-width: 1024px) {
+  .authorInfo {
+    max-width: 300px;
+  }
+  .authorInfo p {
+    font-size: 1.5vw;
+    line-height: 0.7;
+  }
+}
+
+/* for the homepage */
+@media only screen and (max-width: 1024px) {
+  .blogPosts {
+    display: grid !important;
+    grid-template-areas:
+      "1"
+      "2"
+      "3" !important;
+    justify-content: center;
+    /* grid-template-columns: 800px;
+    grid-template-rows: 200px; */
+    max-height: 800px;
+  }
+
+  #item1 {
+    grid-area: 1;
+  }
+
+  #item2 {
+    grid-area: 2;
+  }
+
+  #item3 {
+    grid-area: 3;
+  }
+}
